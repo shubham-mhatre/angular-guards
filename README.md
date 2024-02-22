@@ -6,22 +6,29 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## canActivate Route Guard
+Users & Profile routes are protected with AuthGuard canActivate Guard.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![image](https://github.com/shubham-mhatre/angular-guards/assets/55918816/d4d3ff63-9ce2-4129-a7a7-460b8b91485c)
 
-## Build
+click on Users & Profile link without login.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+![image](https://github.com/shubham-mhatre/angular-guards/assets/55918816/4459d856-3792-443f-bd69-afe5586f7965)
 
-## Running unit tests
+Now Login with any credentials.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![image](https://github.com/shubham-mhatre/angular-guards/assets/55918816/2ae092c2-68dd-4392-8897-fffb3e41da01)
 
-## Running end-to-end tests
+![image](https://github.com/shubham-mhatre/angular-guards/assets/55918816/4e5b890b-dfd2-4a79-b299-bbb0ba4040e5)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+open dev tools & delete token
 
-## Further help
+![image](https://github.com/shubham-mhatre/angular-guards/assets/55918816/d36c000d-fbc0-411c-8722-3bcae59a39a6)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+now click on users or profile link, you will be redirected to login page.
+
+![image](https://github.com/shubham-mhatre/angular-guards/assets/55918816/77cbcb86-3679-44c2-8898-36ab9c3630e1)
+
+redirected to login page
+![image](https://github.com/shubham-mhatre/angular-guards/assets/55918816/c7f7e340-c600-44a1-81ae-ea9b91e985ff)
+
