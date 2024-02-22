@@ -1,0 +1,21 @@
+<h1 class="text-center">Users</h1>
+
+<div *ngIf="users.length > 0; else nousers">
+    <table class="table table-bordered">
+        <tr class="br-light bg-info">
+            <th>ID</th>
+            <th>Name</th>
+            <th>UserName</th>
+            <th>Email</th>
+        </tr>
+        <tr *ngFor="let user of users">
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.email}}</td>
+        </tr>
+    </table>
+</div>
+<ng-template #nousers>
+    <h4 class="alert alert-danger text-center">{{errorMessage}}</h4>
+</ng-template>
